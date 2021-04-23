@@ -29,5 +29,5 @@ def messages():
     loop.run_until_complete(task)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',8000 )
+    app.run('localhost',8000 )
 
