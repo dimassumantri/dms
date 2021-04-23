@@ -8,7 +8,7 @@ from echobot import EchoBot
 app = Flask(__name__)
 loop = asyncio.get_event_loop()
 
-botadaptersettings = BotFrameworkAdapterSettings("94d0f980-12c5-4c0c-a5b1-0444be6f51d8","Fqt27C.gw5E.yUm2ZQy1gpjY~Zstplf..1")
+botadaptersettings = BotFrameworkAdapterSettings("","")
 botadapter = BotFrameworkAdapter(botadaptersettings)
 
 ebot = EchoBot()
@@ -29,5 +29,5 @@ def messages():
     loop.run_until_complete(task)
 
 if __name__ == '__main__':
-    app.run('localhost',3978)
+    app.run('localhost')
 
